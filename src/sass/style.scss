@@ -1,0 +1,34 @@
+/*!
+ * Project name: MyProject
+ * Version: 1.0
+ * Boilerplate template: buildr v0.4
+ * Author: Vedran Jaic
+ * URL: vedranjaic.com
+ */
+
+// Bootstrap
+@import "bootstrap";
+
+// Settings
+@import "variables";
+@import "mixins";
+@import "helpers";
+@import "placeholders";
+@import "touch-events";
+
+// Animations
+@import "animations";
+@import "theme";
+
+// ------------------------------------[ style.css start ]
+
+// Defaults
+@import "template";
+@import "typography";
+
+// Pages layout
+@import "header";
+@import "layout-index";
+@import "footer";
+
+// --------------------------------------[ style.css end ]

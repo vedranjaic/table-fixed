@@ -1,0 +1,62 @@
+// PLACEHOLDERS
+// http://sass-lang.com/documentation/file.SASS_REFERENCE.html#placeholders
+
+// Text overflow
+%text-overflow {
+	display: inline-block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	vertical-align: top;
+}
+
+// Checkboxes
+%checkbox {
+	input[type=checkbox] {
+		display:none;
+	}
+	label {
+		font-weight: normal;
+		font-size: 14px;
+		padding-left: 0;
+	}
+	input,
+	label {
+		&:hover,
+		&:focus {
+			cursor: pointer;
+		}
+	}
+	input[type=checkbox] + label:before {
+		font-family: 'FontAwesome';
+		display: inline-block;
+		letter-spacing: 5px;
+	}
+	input[type=checkbox]:checked + label:before,
+	input[type=checkbox]:checked + label {
+		color: $black;
+	}
+}
+// Radio buttons
+%radio {
+	input[type=radio] {
+		display:none;
+	}
+	label {
+		font-weight: normal;
+		font-size: 14px;
+		padding-left: 0;
+	}
+	input,
+	label {
+		&:hover,
+		&:focus {
+			cursor: pointer;
+		}
+	}
+	input[type=radio] + label:before {
+		font-family: 'FontAwesome';
+		display: inline-block;
+		letter-spacing: 5px;
+	}
+}

@@ -1,0 +1,113 @@
+// Index
+
+// Container
+.container {
+	padding-top: 3em;
+}
+
+// Tables
+table {
+	th,
+	td {
+		white-space: nowrap;
+	}
+}
+.table {
+	margin-bottom: 0;
+}
+.table-responsive {
+	max-height: 50vh;
+}
+
+
+
+// StickyHeader
+.table-responsive {
+	overflow-x: auto;
+	overflow-y: auto;
+	position: relative;
+	margin: 3em 0;
+	width: 100%;
+}
+.table-responsive .sticky-thead,
+.table-responsive .sticky-col,
+.table-responsive .sticky-intersect {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	// transition: all .125s ease-in-out;
+	z-index: 50;
+	width: auto; /* Prevent table from stretching to full size */
+}
+	.table-responsive .sticky-thead {
+		// box-shadow: 0 0.25em 0.1em -0.1em rgba(0,0,0,.125);
+		z-index: 100;
+		width: 100%; /* Force stretch */
+	}
+	.table-responsive .sticky-intersect {
+		opacity: 1;
+		z-index: 150;
+
+	}
+		.table-responsive .sticky-intersect th {
+			background-color: #666;
+			color: #eee;
+		}
+.table-responsive td,
+.table-responsive th {
+	box-sizing: border-box;
+}
+
+/* Not needed for sticky header/column functionality */
+td.user-name {
+	text-transform: capitalize;
+}
+.table-responsive.overflow-y {
+	overflow-y: auto;
+	max-height: 50vh;
+}
+.table-responsive {
+	.table {
+		td,
+		th {
+			border-top: 0 !important;
+		}
+		thead {
+			th {
+				background-color: #eee;
+				border-left: 1px solid #fff;
+			}
+		}
+	}
+}
+
+.sticky-thead,
+.sticky-col {
+	background-color: #FFF;
+}
+.sticky-thead {
+	th {
+		padding: 8px;
+		background-color: #eee;
+		border-left: 1px solid #fff;
+	}
+}
+.sticky-col {
+	th {
+		padding: 8px;
+		border-top: 0;
+	}
+	tbody {
+		tr:first-child {
+			th {
+				border-top: 2px solid;
+			}
+		}
+	}
+}
+.sticky-intersect {
+	th {
+		padding: 8px;
+	}
+}

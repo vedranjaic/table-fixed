@@ -1,0 +1,28 @@
+// Helpers
+*:focus {
+	outline: 0;
+}
+
+// Clearfix
+.clearfix:before,
+.clearfix:after {
+	display: table;
+	content: " ";
+}
+.clearfix:after {
+	clear: both;
+}
+
+// Hide text
+// http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/
+.hide-text {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+// Screen readers and hidden
+.sr-only,
+.hidden {
+	display: none;
+}
