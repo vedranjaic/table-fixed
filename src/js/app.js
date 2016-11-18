@@ -48,7 +48,7 @@ $(function(){
 					$stickyHead.width($t.outerWidth());
 
 					// Set width of sticky table col
-					$stickyCol.find('th').add($stickyInsct.find('th')).width($t.find('thead th').width())
+					$stickyCol.find('tr').add($stickyInsct.find('th')).width($t.find('thead th').width())
 				},
 				repositionStickyHead = function () {
 					// Return value of calculated allowance
@@ -139,3 +139,7 @@ $(function(){
 		}
 	});
 });
+
+$('.row-toggle').click(function() {
+	$('.table.overflow-y .section').toggleClass('hidden');
+})

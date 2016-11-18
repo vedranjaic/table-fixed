@@ -7426,8 +7426,8 @@ table td {
 }
 
 .table-responsive .sticky-intersect th {
-  background-color: #666;
-  color: #eee;
+  background-color: #eee;
+  color: #333;
 }
 
 .table-responsive td,
@@ -7475,6 +7475,17 @@ td.user-name {
 
 .sticky-intersect th {
   padding: 8px;
+}
+
+.row-title th {
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.row-title {
+  position: relative;
 }
 
 

@@ -51,8 +51,8 @@ table {
 
 	}
 		.table-responsive .sticky-intersect th {
-			background-color: #666;
-			color: #eee;
+			background-color: #eee;
+			color: #333;
 		}
 .table-responsive td,
 .table-responsive th {
@@ -109,5 +109,25 @@ td.user-name {
 .sticky-intersect {
 	th {
 		padding: 8px;
+	}
+}
+.row-title {
+	th {
+		max-width: 100px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+}
+
+.row-title {
+	th {
+		
+	// padding-right: 50px;
+	}
+	position: relative;
+	.row-toggle {
+		// position: absolute;
+		// right: 0;
 	}
 }
