@@ -11,6 +11,13 @@ table {
 	td {
 		white-space: nowrap;
 	}
+	& > thead {
+		& > tr {
+			& > th {
+				border-bottom: 1px solid $white !important;
+			}
+		}
+	}
 }
 .table {
 	margin-bottom: 0;

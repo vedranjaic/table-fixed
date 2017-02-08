@@ -7385,6 +7385,9 @@ table th,
 table td {
   white-space: nowrap;
 }
+table > thead > tr > th {
+  border-bottom: 1px solid #ffffff !important;
+}
 
 .table {
   margin-bottom: 0;
