@@ -31,7 +31,7 @@ $(function(){
 				.end()
 				.find('tbody td').remove();
 
-			$stickyInsct.html('<thead><tr><th>'+$t.find('thead th:first-child').html()+'</th></tr><tr><th>'+$t.find('thead tr:nth-child(2) th').html()+'</th></tr></thead>');
+			$stickyInsct.html('<thead><tr><th>'+$t.find('thead th:first-child').html()+'</th><th>'+$t.find('thead th:nth-child(2)').html()+'</th></tr><tr><th>'+$t.find('thead tr:nth-child(2) th:first-child').html()+'</th><th>'+$t.find('thead tr:nth-child(2) th:nth-child(2)').html()+'</th></tr></thead>');
 			
 			// Set widths
 			var setWidths = function () {
