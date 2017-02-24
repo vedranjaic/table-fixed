@@ -1,0 +1,54 @@
+// Progress
+.progress {
+	position: relative;
+	background-color: #cccccc;
+	box-shadow: none;
+	.progress-bars {
+		@extend .progress-bar-time;
+		width: 100%;
+		z-index: 1;
+	}
+	.progress-bar-green {
+		background-color: $pbz-green;
+	}
+	.progress-bar-orange {
+		background-color: $pbz-orange;
+	}
+	.progress-bar-red {
+		background-color: $pbz-red;
+	}
+	// Markers
+	.progress-markers {
+		@extend .progress-bar-time;
+		width: 100%;
+		z-index: 2;
+	}
+	.progress-marker {
+		float: left;
+		height: 100%;
+		border-right: 1px solid #bbbbbb;
+	}
+	.progress-bar-time-marker {
+		@extend .progress-bar-time;
+		border-right: 1px solid $white;
+	}
+	// Time
+	.progress-time {
+		@extend .progress-bar-time;
+		width: 100%;
+		z-index: 3;
+	}
+	.progress-bar-time {
+		position: absolute;
+		height: 100%;
+		text-align: right;
+	}
+	.time-elapsed {
+		font-size: 12px;
+		color: $white;
+		font-weight: 200;
+		line-height: 20px;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+}

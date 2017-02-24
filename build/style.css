@@ -7491,6 +7491,54 @@ td.user-name {
   position: relative;
 }
 
+.progress {
+  position: relative;
+  background-color: #cccccc;
+  box-shadow: none;
+}
+.progress .progress-bars {
+  width: 100%;
+  z-index: 1;
+}
+.progress .progress-bar-green {
+  background-color: #007638;
+}
+.progress .progress-bar-orange {
+  background-color: #f37021;
+}
+.progress .progress-bar-red {
+  background-color: #ed1c24;
+}
+.progress .progress-markers {
+  width: 100%;
+  z-index: 2;
+}
+.progress .progress-marker {
+  float: left;
+  height: 100%;
+  border-right: 1px solid #bbbbbb;
+}
+.progress .progress-bar-time-marker {
+  border-right: 1px solid #ffffff;
+}
+.progress .progress-time {
+  width: 100%;
+  z-index: 3;
+}
+.progress .progress-bar-time, .progress .progress-bars, .progress .progress-markers, .progress .progress-bar-time-marker, .progress .progress-time {
+  position: absolute;
+  height: 100%;
+  text-align: right;
+}
+.progress .time-elapsed {
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: 200;
+  line-height: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
 
 
 /*# sourceMappingURL=style.css.map */
