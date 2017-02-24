@@ -8,6 +8,9 @@
 		width: 100%;
 		z-index: 1;
 	}
+	.progress-bar {
+		@include transition;
+	}
 	.progress-bar-green {
 		background-color: $pbz-green;
 	}
@@ -37,6 +40,9 @@
 		@extend .progress-bar-time;
 		width: 100%;
 		z-index: 3;
+		div {
+			@include transition;
+		}
 	}
 	.progress-bar-time {
 		position: absolute;
