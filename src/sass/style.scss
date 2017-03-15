@@ -7,28 +7,29 @@
  */
 
 // Bootstrap
-@import "bootstrap";
+// @import "bootstrap";
 
 // Settings
 @import "variables";
 @import "mixins";
-@import "helpers";
+// @import "helpers";
 @import "placeholders";
-@import "touch-events";
+// @import "touch-events";
 
 // Animations
-@import "animations";
-@import "theme";
+// @import "animations";
+// @import "theme";
 
 // ------------------------------------[ style.css start ]
 
 // Defaults
-@import "template";
-@import "typography";
+// @import "template";
+// @import "typography";
 
 // Pages layout
-@import "header";
-@import "layout-index";
-@import "footer";
+// @import "header";
+// @import "layout-index";
+@import "layout-table-osf";
+// @import "footer";
 
 // --------------------------------------[ style.css end ]

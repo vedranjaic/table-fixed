@@ -1,0 +1,78 @@
+// Table fixed OSF
+// TEMP
+div[style="padding-left: 15px;"] {
+	padding-left: 0 !important;
+}
+.buttonActionBar {
+	position: fixed;
+}
+
+// Table offers
+
+// Cloned tables
+.sticky-col,
+.sticky-intersect,
+.sticky-thead {
+	th {
+		background-color: #3A87AD;
+		color: white;
+		border: solid white 1px;
+	}
+}
+
+// Sticky intersect
+.sticky-intersect {
+	thead {
+		tr {
+			th {
+				width: 180px;
+				padding: 18px 0;
+				border-top: 0;
+				border-right: 1px solid white !important;
+				// border-left: 0;
+				font-size: 16px;
+				height: 88px;
+			}
+			&:nth-child(2) {
+				th {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+// Sticky THEAD
+.sticky-thead {
+	thead {
+		tr {
+			&:first-child {
+				th {
+					&.optionNameColumnTh {
+						border-left: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Sticky col
+.sticky-col {
+	tbody {
+		tr {
+			th {
+				&.optionOffersHeaderColumnWidth {
+					width: auto !important;
+				}
+				.toggleRowText {
+					@extend %text-overflow;
+					max-width: 80px;
+				}
+				.toggleRowIcon {
+					display: none;
+				}
+			}
+		}
+	}
+}
