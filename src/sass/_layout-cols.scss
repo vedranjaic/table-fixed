@@ -1,0 +1,36 @@
+// Cols
+// Select
+.form-select-field {
+  position: relative;
+  @include breakpoint(lg) {
+  	padding-left: 0;
+  	padding-right: 0;
+  }
+  &:after {
+    content: "\f107";
+    font-family: 'FontAwesome';
+    color: $grey-light-1;
+    font-weight: normal;
+    font-size: 1.6em;
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    line-height: 1em;
+    @include breakpoint(lg) {
+    	right: 10px;
+    }
+  }
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: $grey-dark-2 !important;
+    border-color: transparent !important;
+    color: $grey-light-1 !important;
+    padding: 0.4em 1em 0.5em 0.7em !important;
+    width: 100% !important;
+    font-weight: 700;
+  }
+}

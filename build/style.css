@@ -7491,6 +7491,45 @@ td.user-name {
   position: relative;
 }
 
+.form-select-field {
+  position: relative;
+}
+@media (min-width: 1200px) {
+  .form-select-field {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.form-select-field:after {
+  content: "\f107";
+  font-family: 'FontAwesome';
+  color: #ededed;
+  font-weight: normal;
+  font-size: 1.6em;
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  line-height: 1em;
+}
+@media (min-width: 1200px) {
+  .form-select-field:after {
+    right: 10px;
+  }
+}
+.form-select-field select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #333333 !important;
+  border-color: transparent !important;
+  color: #ededed !important;
+  padding: 0.4em 1em 0.5em 0.7em !important;
+  width: 100% !important;
+  font-weight: 700;
+}
+
 
 
 /*# sourceMappingURL=style.css.map */
